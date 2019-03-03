@@ -17,3 +17,15 @@ footer{
 body{
     background-color: #455a64;
 }
+
+.set-height{
+    height: 266px;
+}
+
+.colorea{
+    background-color: white;
+}
+
+.sep{
+    margin-top: 14px;
+}
