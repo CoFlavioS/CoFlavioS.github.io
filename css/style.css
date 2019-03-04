@@ -26,6 +26,10 @@ body{
     background-color: white;
 }
 
-.sep{
-    margin-top: 14px;
+.pallete{
+    background-color: #263238;
+}
+
+.pallete:hover{
+    background-color: #90a4ae;
 }
