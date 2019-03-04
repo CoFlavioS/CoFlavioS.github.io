@@ -33,3 +33,41 @@ body{
 .pallete:hover{
     background-color: #90a4ae;
 }
+
+.anul-marg{
+    margin-bottom: 0;
+}
+
+.pallete:active{
+    background-color: #607d8b;
+}
+
+.pallete:focus{
+    background:#607d8b;
+}
+
+.title-set{
+    width: 75%;
+}
+
+.set-sides{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.set-height2{
+    height: 266px;
+    width: 150px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.good-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titl-ajust{
+    padding-left: 5% !important;
+}

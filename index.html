@@ -14,37 +14,61 @@
     </head>
 
     <body>
-			<section id="Top" class="section-Top scrollspy">
+			<div class="row anul-marg">
+					<section id="TopPag" class="section-TopPag scrollspy">
+			</div>
+			
+			<div class="navbar-fixed">
 				<nav>
 					<div class="nav-wrapper">
-						<a href="#" class="truncate brand-logo ajustar"><i class="material-icons">gamepad</i>Flaviu Condor</a>
-						<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<div class="hide-on-small-only">
+								<a href="#" class="truncate brand-logo ajustar"><i class="material-icons">gamepad</i>Flaviu Condor</a>
+						</div>
+						<div class="hide-on-med-and-up">
+								<a href="#" class="truncate brand-logo ajustar title-set"><i class="material-icons">gamepad</i>Flaviu Condor</a>
+						</div>
+							<ul id="nav-mobile" class="right hide-on-med-and-down">
 							<li><a href="#MiPersona">Mi Persona</a></li>
 							<li><a href="#CosasDeMi">Cosas de mi Persona</a></li>
 						</ul>
 					</div>
 				</nav>
-			</section>
+			</div>
 
 			<div class="parallax-container">
 				<div class="parallax"><img src="images/fondo2.jpg"></div>
-				<div class="row">
-					<div class="col s12 m8 offset-m2 l6 offset-l3">
-						<div class="card-panel grey lighten-5 z-depth-1">
-							<div class="row valign-wrapper">
-								<div class="col s5">
-									<img src="images/yo.jpg" alt="" class="circle set-height">
+				<div class="hide-on-small-only">
+					<div class="row">
+						<div class="col s12 m7 offset-m2 l6 offset-l3" style="margin-top: 100px">
+							<div class="card horizontal">
+								<div class="card-image">
+									<img src="images/yo.jpg" class="set-height">
 								</div>
-								<div class="col s5">
-									<span class="card-title" style="color: black"><p><h4><b>Hola!</b></h4></p></span>
-									<span class="black-text">
-											<h6>Bienvenidos a mi pagina web.</h6>
-									</span>
+								<div class="card-stacked">
+									<div class="card-content">
+										<span class="card-title" style="color: black"><p><h4><b>Hola!</b></h4></p></span>
+										<span class="black-text">
+												<h6>Bienvenidos a mi pagina web.</h6>
+										</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>		 
+				</div>
+				<div class="hide-on-med-and-up">
+						<div class="col s12 m4">
+								<div class="card set-sides">
+									<div class="card-image">
+										<img src="images/yo.jpg" class="set-height2">
+										<span class="card-title titl-ajust"style="color: black"><b>Hola!</b></span>
+									</div>
+									<div class="card-content">
+										<p>Bienvenidos a mi pagina web.</p>
+									</div>
+								</div>
+							</div>
+				</div>
 			</div>
 			<section id="MiPersona" class="section section-MiPersona scrollspy">
 				<div class="section white">
@@ -93,40 +117,46 @@
 						</div>
 					</div>
 				</div>
-			</section>
 
-			<footer class="page-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col l6 s12">
-							<h5 class="white-text">Gracias por visitarme!!!!</h5>
-						</div>
-						<div class="col l4 offset-l2 s12">
-							<h5 class="white-text">Links</h5>
-							<ul>
-								<li><a class="grey-text text-lighten-3" href="https://www.instagram.com/f.b.condor_12/?hl=es"><i class="fab fa-instagram"></i>  Instagram</a></li>
-								<li><a class="grey-text text-lighten-3" href="https://plus.google.com/u/0/118439266886690727130?tab=rX"><i class="fab fa-google-plus-square"></i>  Google</a></li>
-								<li><a class="grey-text text-lighten-3" href="https://github.com/CoFlavioS"><i class="fab fa-git-square"></i>  Git Hub</a></li>
-							</ul>
+				<footer class="page-footer">
+					<div class="container">
+						<div class="row">
+							<div class="col l6 s12">
+								<h5 class="white-text">Gracias por visitarme!!!!</h5>
+							</div>
+							<div class="col l4 offset-l2 s12">
+								<h5 class="white-text">Links</h5>
+								<ul>
+									<li><a class="grey-text text-lighten-3" href="https://www.instagram.com/f.b.condor_12/?hl=es"><i class="fab fa-instagram"></i>  Instagram</a></li>
+									<li><a class="grey-text text-lighten-3" href="https://plus.google.com/u/0/118439266886690727130?tab=rX"><i class="fab fa-google-plus-square"></i>  Google</a></li>
+									<li><a class="grey-text text-lighten-3" href="https://github.com/CoFlavioS"><i class="fab fa-git-square"></i>  Git Hub</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-			</footer>
+				</footer>
+			
 			<div class="fixed-action-btn">
-				<a class="btn-floating btn-large pallete" href="#Top">
-					<i class="fas fa-angle-double-up"></i>
-				</a>
+				<a href="#TopPag" class="btn-large pallete"><i class="fas fa-angle-double-up"></i></a>
 			</div>
 			
 	<!--JavaScript at end of body for optimized loading-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script>
-			$(document).ready(function(){
-    		$('.parallax').parallax();
-  		});
-			$(document).ready(function(){
-    	$('.fixed-action-btn').floatingActionButton();
-  		});
-			</script>
+		$(document).ready(function(){
+    $('.parallax').parallax();
+  	});
+
+  	const ss = document.querySelectorAll('.scrollspy');
+  	M.ScrollSpy.init(ss, {});
+	 
+		$(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  	});
+
+		$(document).ready(function(){
+    $('.sidenav').sidenav();
+  	});
+		</script>
     </body>
 	</html>
