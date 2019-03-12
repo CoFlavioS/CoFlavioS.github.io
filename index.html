@@ -16,15 +16,24 @@
     <body>
 <!-- Nav-Bar -->
 			<section id="Top" class="section-Top scrollspy">
-				<nav>
-					<div class="nav-wrapper">
-						<a href="#" class="truncate brand-logo ajustar"><i class="material-icons">gamepad</i>Flaviu Condor</a>
-						<ul id="nav-mobile" class="right hide-on-med-and-down">
-							<li><a href="#MiPersona">Mi Persona</a></li>
-							<li><a href="#CosasDeMi">Cosas de mi Persona</a></li>
-						</ul>
-					</div>
-				</nav>
+				<div class="navbar-fixed">
+					<nav>
+						<div class="nav-wrapper">
+							<a href="#" class="truncate brand-logo ajustar"><i class="material-icons">gamepad</i>Flaviu Condor</a>
+							<ul id="nav-mobile" class="right hide-on-med-and-down">
+								<li><a href="#MiPersona">Mi Persona</a></li>
+								<li><a href="#CosasDeMi">Cosas de mi Persona</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+	<!-- Boton-Flotante -->
+				<div class="fixed-action-btn">
+					<a class="btn-large pallete" href="#Top">
+						<i class="fas fa-angle-double-up"></i>
+					</a>
+				</div>
+	<!-- Boton-Flotante -->
 			</section>
 <!-- Nav-Bar end -->
 
@@ -137,23 +146,19 @@
 				</div>
 			</footer>
 <!-- Footer end -->
-
-<!-- Boton-Flotante -->
-			<div class="fixed-action-btn">
-				<a class="btn-floating btn-large pallete" href="#Top">
-					<i class="fas fa-angle-double-up"></i>
-				</a>
-			</div>
-<!-- Boton-Flotante -->
 			
 <!--JavaScript at end of body for optimized loading-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="/js/chancol.js"></script>
 		<script>
 			$(document).ready(function(){
     		$('.parallax').parallax();
   		});
 			$(document).ready(function(){
     	$('.fixed-action-btn').floatingActionButton();
+			});
+			$(document).ready(function(){
+    	$('.scrollspy').scrollSpy();
   		});
 			</script>
     </body>
