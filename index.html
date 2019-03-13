@@ -18,8 +18,9 @@
 			<section id="Top" class="section-Top scrollspy">
 				<div class="navbar-fixed">
 					<nav>
+						<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons ajustar">menu</i></a>
 						<div class="nav-wrapper">
-							<a href="#" class="truncate brand-logo ajustar"><i class="material-icons">gamepad</i>Flaviu Condor</a>
+							<a href="#" class="truncate brand-logo ajustar center"><i class="material-icons">gamepad</i>Flaviu Condor</a>
 							<ul id="nav-mobile" class="right hide-on-med-and-down">
 								<li><a href="#MiPersona">Mi Persona</a></li>
 								<li><a href="#CosasDeMi">Cosas de mi Persona</a></li>
@@ -27,6 +28,10 @@
 						</div>
 					</nav>
 				</div>
+				<ul id="slide-out" class="sidenav">
+					<li><a href="#MiPersona">Mi Persona</a></li>
+					<li><a href="#CosasDeMi">Cosas de mi Persona</a></li>
+				</ul>
 	<!-- Boton-Flotante -->
 				<div class="fixed-action-btn">
 					<a class="btn-large pallete" href="#Top">
@@ -160,6 +165,9 @@
 			$(document).ready(function(){
     	$('.scrollspy').scrollSpy();
   		});
+			$(document).ready(function(){
+  	  $('.sidenav').sidenav();
+ 		 	});
 			</script>
     </body>
 	</html>
