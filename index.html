@@ -9,6 +9,7 @@
 <!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/color.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
@@ -28,10 +29,12 @@
 						</div>
 					</nav>
 				</div>
+	<!-- Sidenav -->
 				<ul id="slide-out" class="sidenav">
 					<li><a href="#MiPersona">Mi Persona</a></li>
 					<li><a href="#CosasDeMi">Cosas de mi Persona</a></li>
 				</ul>
+	<!-- Sidenav end -->
 	<!-- Boton-Flotante -->
 				<div class="fixed-action-btn">
 					<a class="btn-large pallete" href="#Top">
@@ -69,7 +72,7 @@
 
 <!-- Section-1 -->
 			<section id="MiPersona" class="section section-MiPersona scrollspy">
-				<div class="section white">
+				<div class="section" style="background-color: white">
 					<div class="row container">
 						<h2 class="header">Mi Persona</h2>
 						<p class="grey-text text-darken-3 lighten-3">Hola soy Flaviu y esta es mi primera pagina web. Me encanta la informatica a pesar de no saber tanto como me gustaria pero voy con ganas de aprender lo que pueda. Por otro lado me encanta dibujar y los videojuegos.</p>
@@ -78,15 +81,25 @@
 			</section>
 <!-- Section-1 end -->
 
-<!-- Paralax-2 -->
-			<div class="parallax-container">
-				<div class="parallax"><img src="images/fondo.jpg"></div>
-			</div>
-<!-- Paralax-2 end -->
-
 <!-- Section-2 -->
+			<section id="sect" style="background-color: white">
+				<div class="section">
+					<div class="row container">
+						<h2 class="header grey-text text-darken-3 lighten-3">Elige un color.</h2>
+						<p class="grey-text text-darken-3 lighten-3">Este color se aplicara al fondo de esta secion(planeo hacerlo para todas).</p>
+						<input type="checkbox" id="color-input" checked></input>
+						<div id="color-picker">
+							<canvas id="color-block" height="150" width="150"></canvas>
+							<canvas id="color-strip" height="150" width="30"></canvas>
+						</div>
+					</div>
+				</div>
+			</section>
+<!-- Section-2 end -->
+
+<!-- Section-3 -->
 			<section id="CosasDeMi" class="section section-CosasDeMi scrollspy">
-				<div class="row white" style="margin-bottom: 0px">
+				<div class="row" style="margin-bottom: 0px; background-color: white">
 	<!-- Card-1 -->
 					<div class="col s12 m4">
 						<div class="card">
@@ -130,7 +143,7 @@
 	<!-- Card-3 end -->
 				</div>
 			</section>
-<!-- Section-2 end -->
+<!-- Section-3 end -->
 
 <!-- Footer -->
 			<footer class="page-footer">
@@ -154,7 +167,7 @@
 			
 <!--JavaScript at end of body for optimized loading-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<script src="/js/chancol.js"></script>
+		<script src="js/color.js"></script>
 		<script>
 			$(document).ready(function(){
     		$('.parallax').parallax();

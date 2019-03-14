@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+#color-input {
+  display: none;
+}
+#color-input:checked ~ #color-picker {
+  opacity: 1;
+}
+#color-picker {
+  position: static;
+  left: 70px; 
+  background-color: white;
+  height: 170px;
+  width: 200px;
+  border: solid 1px #ccc;
+  opacity: 0;
+  padding: 5px;
+}
+canvas:hover {
+  cursor: crosshair;
+}
